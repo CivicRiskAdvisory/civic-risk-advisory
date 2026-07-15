@@ -1,0 +1,7 @@
+/* CRA webfonts — IBM Plex superfamily (Serif · Sans · Mono).
+   Open-source (SIL OFL) and on Google Fonts, so it loads on the web and embeds
+   into PDFs identically. One family across display, body, and data removes the
+   old Montserrat/Calibri split. Only editable .docx needs a system fallback
+   (declared in typography.css): Georgia (serif), Calibri/Segoe UI (sans),
+   Consolas (mono). Consumers link styles.css, which pulls this @import. */
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Serif:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&family=IBM+Plex+Sans:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&family=IBM+Plex+Mono:wght@400;500;600&display=swap');

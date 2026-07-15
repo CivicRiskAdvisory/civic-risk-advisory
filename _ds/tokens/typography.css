@@ -1,0 +1,50 @@
+/* ============================================================
+   CRA Typography Tokens
+   IBM Plex superfamily: Plex Serif (display/names), Plex Sans (body/wordmark),
+   Plex Mono (figures). Brand expression comes from weight, spacing, and case.
+   ============================================================ */
+:root {
+  /* --- Families (IBM Plex superfamily; system fallbacks for editable .docx) --- */
+  --font-serif:   'IBM Plex Serif', Georgia, 'Times New Roman', serif;      /* display, names, headings */
+  --font-sans:    'IBM Plex Sans', 'Segoe UI', Calibri, Helvetica, Arial, sans-serif; /* body, section labels, wordmark */
+  --font-mono:    'IBM Plex Mono', Consolas, 'SF Mono', 'Courier New', monospace;     /* figures, data, tables */
+  --font-display: var(--font-serif); /* names / hero — the editorial serif */
+  --font-brand:   var(--font-sans);  /* the tracked-caps wordmark */
+
+  /* --- Weights (shared across the Plex families) --- */
+  --fw-light:     300; /* @kind font */
+  --fw-regular:   400; /* @kind font */
+  --fw-medium:    500; /* @kind font */
+  --fw-semibold:  600; /* @kind font */
+  --fw-bold:      700; /* @kind font */
+  --fw-extrabold: 700; /* @kind font */
+
+  /* --- Type scale ---
+     Anchored to the one-pager scale (9.5pt body ≈ 15px screen equivalent),
+     scaled up for legible on-screen and slide use. */
+  --fs-hero:      44px; /* deck title / hero name */
+  --fs-display:   30px; /* large name / page title */
+  --fs-h1:        22px; /* document name */
+  --fs-h2:        17px; /* subsection */
+  --fs-section:   14px; /* SECTION HEADERS — uppercase, tracked */
+  --fs-lead:      16px; /* tagline / lead */
+  --fs-body:      15px; /* body copy */
+  --fs-sm:        13px; /* contact, credits */
+  --fs-xs:        11.5px; /* footer bar, wordmark small, metadata */
+
+  /* --- Line heights --- */
+  --lh-tight:   1.15; /* @kind font */
+  --lh-snug:    1.35; /* @kind font */
+  --lh-body:    1.55; /* @kind font */
+
+  /* --- Letter spacing --- */
+  --ls-wordmark: 0.34em;  /* the spaced small-caps wordmark */
+  --ls-section:  0.14em;  /* uppercase section headers */
+  --ls-caps:     0.08em;  /* general uppercase labels */
+  --ls-tight:    -0.01em; /* large display sizes */
+
+  /* --- Semantic roles --- */
+  --text-display-weight: var(--fw-bold);
+  --text-section-weight: var(--fw-bold);
+  --text-label-weight:   var(--fw-semibold);
+}

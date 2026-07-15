@@ -1,0 +1,47 @@
+/* ============================================================
+   CRA Data-Visualization Tokens
+   Chart color follows different rules than brand accents: categories
+   must be distinguishable, ramps perceptually ordered, and everything
+   should survive grayscale and color-vision deficiency. The palette
+   extends the brand with a warm ochre and a muted slate teal so a full
+   chart still reads as CRA. Pair color with labels/position — never
+   encode meaning by hue alone.
+   ============================================================ */
+:root {
+  /* --- Categorical — up to 6 series, ordered by max adjacent contrast --- */
+  --chart-cat-1: #1B2A4A; /* @kind color */ /* Navy       — default single series */
+  --chart-cat-2: #7A2E3B; /* @kind color */ /* Maroon     — headline / emphasis series */
+  --chart-cat-3: #5C6B4F; /* @kind color */ /* Olive */
+  --chart-cat-4: #C0873E; /* @kind color */ /* Ochre      — new */
+  --chart-cat-5: #3F6E7D; /* @kind color */ /* Slate Teal — new */
+  --chart-cat-6: #A8566A; /* @kind color */ /* Soft Maroon */
+
+  /* --- Sequential "Risk / intensity" — single-hue maroon ramp, low → high --- */
+  --chart-seq-1: #F5E6E3; /* @kind color */
+  --chart-seq-2: #E2B6B2; /* @kind color */
+  --chart-seq-3: #C87F7E; /* @kind color */
+  --chart-seq-4: #A24E53; /* @kind color */
+  --chart-seq-5: #7A2E3B; /* @kind color */
+
+  /* --- Diverging "Olive ↔ Maroon" — favorable ← neutral → adverse --- */
+  --chart-div-1: #4E5E43; /* @kind color */ /* most favorable (olive) */
+  --chart-div-2: #8E9A7C; /* @kind color */
+  --chart-div-3: #C7CDBB; /* @kind color */
+  --chart-div-4: #F0EBE3; /* @kind color */ /* neutral midpoint (cream) */
+  --chart-div-5: #DDB1AD; /* @kind color */
+  --chart-div-6: #B4696D; /* @kind color */
+  --chart-div-7: #7A2E3B; /* @kind color */ /* most adverse (maroon) */
+
+  /* --- Chart furniture --- */
+  --chart-ink:   #2A2A2A; /* @kind color */ /* labels, data text */
+  --chart-axis:  #1B2A4A; /* @kind color */ /* axis lines, ticks */
+  --chart-grid:  #E4DED4; /* @kind color */ /* gridlines — warm light, never black */
+  --chart-plot:  #FFFFFF; /* @kind color */ /* plot area on warm page */
+
+  /* --- Line-graph specifics --- */
+  --chart-line-w:        2.5px; /* default stroke; emphasis series 3px, secondary 1.75px */
+  --chart-line-emphasis: 3px;
+  --chart-line-muted:    1.75px;
+  --chart-marker-r:      3.5px; /* data-point marker radius; show at low density only */
+  --chart-area-alpha:    0.12;  /* @kind other */ /* fill opacity when a line carries a shaded area */
+}

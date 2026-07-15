@@ -1,0 +1,56 @@
+/* ============================================================
+   CRA Color Tokens
+   Palette drawn from DJ Falkson's personal style — warm, grounded,
+   never corporate. No pure black, no pure white, no saturated blues.
+   ============================================================ */
+:root {
+  /* --- Base palette --- */
+  --cra-navy:         #1B2A4A; /* Primary dark — header/footer bands, headings */
+  --cra-maroon:       #7A2E3B; /* Primary accent — stripes, bars, bullets */
+  --cra-maroon-soft:  #A8566A; /* Soft maroon — wordmark on dark, secondary accent */
+  --cra-olive:        #5C6B4F; /* Tertiary — writing/speaking bullets, subtle accents */
+  --cra-offwhite:     #FAF7F3; /* Warm off-white — page background (NOT pure white) */
+  --cra-cream:        #F0EBE3; /* Cream — dividers, subtle rules, alt row shading */
+
+  /* --- Text on light --- */
+  --cra-ink:          #2A2A2A; /* Body copy */
+  --cra-ink-2:        #444444; /* Supporting descriptions */
+  --cra-muted:        #666666; /* Footnotes, captions, footer notes */
+  --cra-muted-light:  #888888; /* De-emphasized metadata */
+
+  /* --- Text on dark (navy bands) --- */
+  --cra-on-dark:      #DCE4EE; /* Bright — name, tagline on navy */
+  --cra-on-dark-2:    #B8C6D8; /* Light — contact info, footer text on navy */
+
+  /* ============================================================
+     Semantic aliases — reference these in components/kits
+     ============================================================ */
+  --surface-page:     var(--cra-offwhite);
+  --surface-band:     var(--cra-navy);   /* header + footer bands */
+  --surface-card:     #FFFFFF;           /* raised cards sit slightly above the warm page */
+  --surface-alt:      var(--cra-cream);  /* alternating rows, inset panels */
+
+  --text-body:        var(--cra-ink);
+  --text-secondary:   var(--cra-ink-2);
+  --text-muted:       var(--cra-muted);
+  --text-faint:       var(--cra-muted-light);
+  --text-heading:     var(--cra-navy);
+  --text-on-band:     var(--cra-on-dark);
+  --text-on-band-2:   var(--cra-on-dark-2);
+
+  --accent:           var(--cra-maroon);      /* primary accent */
+  --accent-soft:      var(--cra-maroon-soft); /* wordmark on dark */
+  --accent-tertiary:  var(--cra-olive);
+
+  --stripe:           var(--cra-maroon);  /* left page stripe */
+  --divider:          var(--cra-cream);   /* hairline rules */
+  --bullet:           var(--cra-maroon);  /* square bullets */
+  --bullet-alt:       var(--cra-olive);   /* round writing/speaking bullets */
+
+  /* Interaction — muted brand system: hover darkens, press deepens */
+  --accent-hover:     #6A2833;
+  --accent-press:     #5A222C;
+  --navy-hover:       #16233E;
+  --link:             var(--cra-maroon);
+  --link-hover:       var(--accent-hover);
+}
